@@ -42,4 +42,14 @@ public class Book {
 		return price;
 	}
 	
+	public String toString() {
+		String outName = "name: " + name + ", ";
+		String outAuthor = "author: " + author + ", ";
+		String outPublisher = "publisher: " + publisher + ", ";
+		String outYear = "year: " + Integer.toString(year) + ", ";
+		String outPages = "pages: " + Integer.toString(pages) + ", ";
+		String outPrice = "price: " + Double.toString(price);
+		return "Book info: {" + outName + outAuthor + outPublisher + outYear + outPages + outPrice + "}";
+	}
+	
 }
