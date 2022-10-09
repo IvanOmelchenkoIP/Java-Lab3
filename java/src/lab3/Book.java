@@ -4,16 +4,16 @@ public class Book {
 	
 	private String name;
 	private String author;
-	private String publishHouse;
-	private String publishYear;
-	private String pages;
-	private String price;
+	private String publisher;
+	private int year;
+	private int pages;
+	private double price;
 	
-	Book(String name, String author, String pHouse, String pYear, String pages, String price) {
+	Book(String name, String author, String publisher, int year, int pages, double price) {
 		this.name = name;
 		this.author = author;
-		this.publishHouse = pHouse;
-		this.publishYear = pYear;
+		this.publisher = publisher;
+		this.year = year;
 		this.pages = pages;
 		this.price = price;
 	}
