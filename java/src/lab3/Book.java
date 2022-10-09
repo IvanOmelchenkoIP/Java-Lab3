@@ -17,4 +17,29 @@ public class Book {
 		this.pages = pages;
 		this.price = price;
 	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String getAuthor() {
+		return author;
+	}
+	
+	public String getPublisher() {
+		return publisher;
+	}
+	
+	public int getYear() {
+		return year;
+	}
+	
+	public int getPages() {
+		return pages;
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+	
 }
