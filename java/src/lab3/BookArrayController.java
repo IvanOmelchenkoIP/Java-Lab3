@@ -3,8 +3,8 @@ package lab3;
 import java.util.ArrayList;
 
 public class BookArrayController {
-	BookArrayModel model;
-	BookArrayView view;
+	private BookArrayModel model;
+	private BookArrayView view;
 	
 	BookArrayController(BookArrayModel model, BookArrayView view) {
 		this.model = model;
