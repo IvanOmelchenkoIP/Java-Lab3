@@ -1,0 +1,29 @@
+name: Build and Test
+
+on:
+ push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setupup Java JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Build
+        working-directory: ./java
+        run: javac ./src/lab3/book/Book.java ./src/lab3/book/comparator/BookPublisherComparator.java ./src/lab3/book/array/BookArrayModel.java ./src/lab3/book/array/BookArrayView.java ./src/lab3/book/initer/BookArrayIniter.java ./src/lab3/book/array/BookArrayController.java ./src/lab3/menu/datagenerator/ProcessingDataGenerator.java ./src/lab3/menu/scanner/InputScanner.java ./src/lab3/menu/MenuModel.java ./src/lab3/menu/MenuView.java ./src/lab3/menu/MenuController.java ./src/lab3/Main.java
+
+      - name: Test
+        working-directory: ./java
+        run: |
+         javac -cp "./testing/junit-platform-console-standalone-1.9.0.jar" ./src/lab3/book/comparator/BookPublisherComparator.java ./src/lab3/book/Book.java ./src/lab3/book/array/BookArrayModel.java ./src/lab3/book/unittests/BookArrayTests.java
+         java -jar ./testing/junit-platform-console-standalone-1.9.0.jar -cp "./src" --select-class lab3.book.unittests.BookArrayTests

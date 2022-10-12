@@ -1,4 +1,4 @@
-package lab3.book.uniutests;
+package lab3.book.unittests;
 
 import java.util.ArrayList;
 import lab3.book.Book;

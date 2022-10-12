@@ -49,7 +49,7 @@ public class BookArrayModel {
 	
 	public ArrayList<Book> sortBooksByPublisher() {
 		Comparator<Book> comparator = new BookPublisherComparator();
-		ArrayList<Book> sorted = (ArrayList<Book>)books.clone();
+		ArrayList<Book> sorted = new ArrayList<Book>(books);
 		Collections.sort(sorted, comparator);
 		return sorted;
 	}
