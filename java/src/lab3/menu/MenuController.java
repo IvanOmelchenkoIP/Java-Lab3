@@ -20,13 +20,17 @@ public class MenuController {
 	
 	public void launch() {
 		books.initBookArray();
+		model.addBookController(books);
 		
 		while(runFlag) {
+			view.printMenuMessage(MenuView.NEW_LINE);
 			view.printMenuMessage(MenuView.MENU);
 			view.printMenuMessage(MenuView.INPUT_FIELD);
 			
 			String input = InputScanner.scan();
-			runFlag = model.processInput(input);
+			boolean[] ret = model.processInput(input);
+			runFlag = ret[0];
+			if (ret[1]) view.printMenuMessage(MenuView.INVALID_COMMAND);
 		}
 		view.printMenuMessage(MenuView.EXIT);	
 	}	

@@ -22,17 +22,17 @@ public class BookArrayController {
 	
 	public void getBooksOfAuthor(String author) {
 		ArrayList<Book> selected = model.getBooksOfAuthor(author);
-		view.printOperationMessage(selected, BookArrayView.SUCCESS_SELECT_BY_AUTHOR, BookArrayView.ERR_SELECT_BY_AUTHOR);
+		view.printOperationMessage(selected, BookArrayView.SUCCESS_SELECT_BY_AUTHOR, BookArrayView.ERR_SELECT_BY_AUTHOR, author);
 	}
 	
 	public void getBooksOfPublisher(String publisher) {
 		ArrayList<Book> selected = model.getBooksOfAuthor(publisher);
-		view.printOperationMessage(selected, BookArrayView.SUCCESS_SELECT_BY_PUBLISHER, BookArrayView.ERR_SELECT_BY_PUBLISHER);
+		view.printOperationMessage(selected, BookArrayView.SUCCESS_SELECT_BY_PUBLISHER, BookArrayView.ERR_SELECT_BY_PUBLISHER, publisher);
 	}
 	
 	public void getBooksAfterYear(int year) {
 		ArrayList<Book> selected = model.getBooksAfterYear(year);
-		view.printOperationMessage(selected, BookArrayView.SUCCESS_SELECT_AFTER_YEAR, BookArrayView.ERR_SELECT_AFTER_YEAR);
+		view.printOperationMessage(selected, BookArrayView.SUCCESS_SELECT_AFTER_YEAR, BookArrayView.ERR_SELECT_AFTER_YEAR, year);
 	}
 	
 	public void sortBooksByPublisher() {
