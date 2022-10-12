@@ -1,4 +1,4 @@
-package lab3;
+package lab3.menu;
 
 public class MenuView {
 	

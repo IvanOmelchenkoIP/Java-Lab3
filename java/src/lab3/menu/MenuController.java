@@ -1,4 +1,7 @@
-package lab3;
+package lab3.menu;
+
+import lab3.book.array.BookArrayController;
+import lab3.menu.scanner.InputScanner;
 
 public class MenuController {
 	
@@ -9,7 +12,7 @@ public class MenuController {
 	
 	private BookArrayController books;
 	
-	MenuController(MenuModel model, MenuView view, BookArrayController books) {
+	public MenuController(MenuModel model, MenuView view, BookArrayController books) {
 		this.model = model;
 		this.view = view;
 		this.books = books;

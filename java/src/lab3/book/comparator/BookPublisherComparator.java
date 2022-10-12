@@ -1,6 +1,8 @@
-package lab3;
+package lab3.book.comparator;
 
 import java.util.Comparator;
+
+import lab3.book.Book;
 
 public class BookPublisherComparator implements Comparator<Book>{
 	

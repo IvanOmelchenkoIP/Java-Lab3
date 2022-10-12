@@ -1,6 +1,10 @@
-package lab3;
+package lab3.book.initer;
 
 import java.util.Random;
+
+import lab3.book.Book;
+import lab3.book.array.BookArrayModel;
+
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Collections;

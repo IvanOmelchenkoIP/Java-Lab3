@@ -1,6 +1,8 @@
-package lab3;
+package lab3.book.array;
 
 import java.util.ArrayList;
+
+import lab3.book.Book;
 
 public class BookArrayView {
 	

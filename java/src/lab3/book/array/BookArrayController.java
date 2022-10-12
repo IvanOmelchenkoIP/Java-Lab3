@@ -1,12 +1,15 @@
-package lab3;
+package lab3.book.array;
 
 import java.util.ArrayList;
+
+import lab3.book.Book;
+import lab3.book.initer.BookArrayIniter;
 
 public class BookArrayController {
 	private BookArrayModel model;
 	private BookArrayView view;
 	
-	BookArrayController(BookArrayModel model, BookArrayView view) {
+	public BookArrayController(BookArrayModel model, BookArrayView view) {
 		this.model = model;
 		this.view = view;
 	}

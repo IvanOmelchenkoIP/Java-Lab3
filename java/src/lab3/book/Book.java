@@ -1,4 +1,4 @@
-package lab3;
+package lab3.book;
 
 public class Book {
 	
@@ -9,7 +9,7 @@ public class Book {
 	private int pages;
 	private double price;
 	
-	Book(String name, String author, String publisher, int year, int pages, double price) {
+	public Book(String name, String author, String publisher, int year, int pages, double price) {
 		this.name = name;
 		this.author = author;
 		this.publisher = publisher;

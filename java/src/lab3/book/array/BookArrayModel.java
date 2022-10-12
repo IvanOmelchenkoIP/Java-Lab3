@@ -1,14 +1,17 @@
-package lab3;
+package lab3.book.array;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+import lab3.book.Book;
+import lab3.book.comparator.BookPublisherComparator;
+
 public class BookArrayModel {
 	
 	private ArrayList<Book> books;
 	
-	BookArrayModel() {
+	public BookArrayModel() {
 		books = new ArrayList<Book>();
 	}
 	
