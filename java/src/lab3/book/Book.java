@@ -42,6 +42,7 @@ public class Book {
 		return price;
 	}
 	
+	@Override
 	public String toString() {
 		String outName = "name: " + name + ", ";
 		String outAuthor = "author: " + author + ", ";
