@@ -8,6 +8,7 @@ public class Main {
 		BookArrayController controller = new BookArrayController(model, view);
 		
 		Menue menue = new Menue(controller); 
+		menue.launch();
 	}
 
 }
