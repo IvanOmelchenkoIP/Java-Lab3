@@ -9,6 +9,6 @@ public class Menue {
 	}
 	
 	public void launch() {
-		
+		bookController.initBookArray();
 	}
 }

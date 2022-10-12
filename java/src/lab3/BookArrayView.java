@@ -18,8 +18,9 @@ public class BookArrayView {
 	
 	public static final String ERR_SORT_BY_PUBLISHER = "There is not a single book in the array to sort...";
 	
-	public void printInitMessage(int amount) {
-		System.out.printf("%s: %d\n", ARRAY_FORMED, amount);
+	public void printInitMessage(ArrayList<Book> books) {
+		System.out.printf("%s: %d\n", ARRAY_FORMED, books.size());
+		for (Book book : books) System.out.println(book.toString());
 	}
 	
 	public void printOperationMessage(ArrayList<Book> books, String msgSuccess, String msgError) {

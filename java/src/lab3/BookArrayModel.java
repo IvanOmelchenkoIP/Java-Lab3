@@ -16,6 +16,10 @@ public class BookArrayModel {
 		books.add(book);
 	}
 	
+	public ArrayList<Book> getBooks() {
+		return books;
+	}
+	
 	public ArrayList<Book> getBooksOfAuthor(String author) {
 		ArrayList<Book> selected = new ArrayList<Book>();
 		for (Book book : books) {

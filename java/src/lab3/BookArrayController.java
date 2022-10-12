@@ -13,7 +13,8 @@ public class BookArrayController {
 	
 	public void initBookArray(Book[] books) {
 		for (Book book : books) model.addBook(book);
-		view.printInitMessage(books.length);
+		ArrayList<Book> bookList = model.getBooks();
+		view.printInitMessage(bookList);
 	}
 	
 	public void getBooksOfAuthor(String author) {
