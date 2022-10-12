@@ -7,10 +7,10 @@ public class Main {
 		BookArrayView booksView = new BookArrayView();
 		BookArrayController books = new BookArrayController(booksModel, booksView);
 		
-		MenueModel menueModel = new MenueModel();
-		MenueView menueView = new MenueView();
-		MenueController menue = new MenueController(menueModel, menueView, books); 
-		menue.launch();
+		MenuModel menuModel = new MenuModel();
+		MenuView menuView = new MenuView();
+		MenuController menu = new MenuController(menuModel, menuView, books); 
+		menu.launch();
 	}
 
 }

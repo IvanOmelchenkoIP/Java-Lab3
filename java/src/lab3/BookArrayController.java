@@ -12,8 +12,7 @@ public class BookArrayController {
 	}
 	
 	public void initBookArray() {
-		BookArrayIniter initer = new BookArrayIniter();
-		initer.init(model);
+		BookArrayIniter.init(model);
 		ArrayList<Book> bookList = model.getBooks();
 		view.printInitMessage(bookList);
 	}
