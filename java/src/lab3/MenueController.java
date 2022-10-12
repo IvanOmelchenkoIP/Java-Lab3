@@ -2,6 +2,8 @@ package lab3;
 
 public class MenueController {
 	
+	private boolean runFlag = true;
+	
 	private MenueModel model;
 	private MenueView view;
 	
@@ -16,7 +18,10 @@ public class MenueController {
 	public void launch() {
 		books.initBookArray();
 		
-		while(true) {
+		while(runFlag) {
+			view.printMenueMessage(view.MENUE);
+			view.printMenueMessage(view.INPUT_FIELD);
 		}
+		view.printMenueMessage(view.EXIT);	
 	}	
 }
